@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen dinâmicas</title>
+</head>
+<body>
+    <h1>Imagen dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente ou diminua o tamanho no seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto flexivel">
+    </picture>
+    <h1>Reproduzir áudio</h1>
+    <p>Vamos aprender a reproduzar áudio em HTML5</p>
+        <audio src="musica/Dark Hallway - Kevin MacLeod.mp3"controls autoplay  loop>
+                Dark Hallway de Kevin MacLeod é licenciada de acordo com a licença Atribuição 4.0 da Creative Commons. <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>
+                Fonte: <a href="http://incompetech.com/music/royalty-free/?keywords=Hallway&Search=Search">http://incompetech.com/music/royalty-free/?keywords=Hallway&Search=Search</a>
+                Artista: <a href="http://incompetech.com/">
+                <a href="http://incompetech.com/"></a> 
+            </audio>
+    
+    <audio src="musica/Dark Hallway - Kevin MacLeod.mp3"controls autoplay loop>
+        <source src="musica/Dark Hallway - Kevin MacLeod.ogg" type="audio/ogg">
+        <source src="musica/Dark Hallway - Kevin MacLeod.mp3" type="audio/mpeg">
+        <p>su navegador não suporta o áudio <a href="musica/Dark Hallway - Kevin MacLeod.mp3">clique para ir no site</a></p>
+    </audio>
+</body>
+</html>

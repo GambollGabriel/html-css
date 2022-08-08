@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*
+ Em HTML é id = em CSS é # (só em um,não pode ser repetido no mesmo arquivo,só pode ser repetido em arquivos diferentes.)
+ Em HTML é class= em CSS é . (mais de um no mesmo arquivo.)  
+*/
+body{
+    background-color: rgb(201, 146, 6);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(192, 103, 1);
+}
+.htmlecss{
+    background-color: black;
+    text-align: center;
+}
+#numero1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.basico{
+    color: rgb(22, 0, 221);
+}
+.intermediario{
+    color: rgb(25, 25, 163);
+}
+.avancado{
+    color: rgb(92, 18, 211);
+}

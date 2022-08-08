@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:visited /*se vc ja visitou */{
+            color: rgb(139, 0, 0);
+        }
+        a:hover/*se vc passar o mouse por sima */{
+            text-decoration: underline;
+            color: black;
+            font-weight: bolder;
+        }
+        a:active /*se vc clicar*/{
+            color: blueviolet;
+        }
+        .youtube:hover{
+            background-color: rgba(36, 218, 54, 0.623);
+        }
+        .youtube::after /*depois*/{
+             content: '☂';
+        }
+        .youtube::before/*antes*/{
+             content: '☂';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/rotina_de_memes" target="_blank" rel="external" class="espacial">Istagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100075214742550"target="_blank" rel="external">Facebook</a></li>
+        <li><a href="https://youtu.be/mll65wLq6G4"target="_blank" rel="external" class="youtube">You Tube</a></li>
+    </ul>
+</body>
+</html>

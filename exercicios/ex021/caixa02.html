@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: rgb(36,36,36);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+        }
+        header{
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border: 3px solid rgb(0, 0, 0);
+        }
+        nav{
+            background-color: rgb(158, 158, 158);
+            box-shadow: 2px 3px 2px 0px rgb(0 0 0 / 56%);
+        }
+        nav > a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 10px;
+            padding:1px;
+            font-weight: bold;
+        }
+        nav > a:hover{
+              text-decoration: underline;
+        }
+        section:hover > #jogo{
+            text-decoration: underline;
+        }
+        section > #jogo2{
+            display: none;
+        }
+        section:hover>#jogo2{
+            display: block;
+        }
+        main{
+            background-color: rgb(255, 255, 255);
+            border: 3px solid rgb(0, 0, 0);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 9px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
+        }
+        article{
+            background-color: rgba(133, 112, 30, 0.61);
+        }
+        aside>p{
+          background-color: rgba(128, 128, 128, 0.74);
+          color: rgb(255, 255, 255);
+          margin: auto;
+        }
+        footer{
+            text-align: center;
+            background-color: black;
+            color: chocolate;
+            border: 3px solid chocolate;
+            padding: 10px;
+        }
+        footer>p{
+            margin: 0px;
+        }
+        div#circulo{
+            background-color: aliceblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+         <nav>
+            <a href="caixa01.html">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p id="jogo">O jogo bom !</p>
+            <p id="jogo2">Genshin</p>
+        </section>
+        <section>
+            <article>
+                <h2>Por que é bom?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime porro accusamus animi dicta natus, ad inventore molestias expedita dolorem voluptate, similique dolor deleniti laborum exercitationem obcaecati aperiam blanditiis. Odio, deleniti!</p>
+                <aside>
+                    <p id="naosei">não sei o que eu estou fazendo da vida!</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Eu irei fazer um jogo 2D! Um dia.</p>
+    </footer>
+    <div id="circulo"></div>
+</body>
+</html>
