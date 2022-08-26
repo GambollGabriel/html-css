@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo.</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        div.quadrado{
+            display: inline-block;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            background-color: rgb(156, 13, 13);
+            width: 300px;
+            height: 300px;
+        }
+        body{
+            background-image: url('imagens/pattern003.png');
+        }
+
+        div#q1{
+            background-color: skyblue;
+        }
+        div#q1:hover{
+            background-image: url('imagens/pattern003.png');
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow,red);
+        }
+        div#q3{
+           background-image: url('imagens/pattern004.png');
+        }
+        div#q4{
+            background-color: aqua;
+        }
+        div#q4:hover{
+           transition-duration: 1s;
+           background-color: blue;
+        }
+        div#q4:active{
+           background-color: black;
+        }/*A ordem autera o resutado*/
+    </style>
+</head>
+<body>
+    <h1>título</h1>
+    <div class="quadrado" id="q1">
+ 
+    </div>
+    <div class="quadrado" id="q2">
+    
+    </div>
+    <br>
+    <div class="quadrado" id="q3">
+    
+    </div>
+    <div class="quadrado" id="q4">
+    
+    </div>
+</body>
+</html>
