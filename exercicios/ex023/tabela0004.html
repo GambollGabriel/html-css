@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        thead > tr > th{
+            background-color: rgb(255, 0, 0);
+            color: white;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .cor{
+            background-color: rgb(0, 221, 221);
+        }
+
+    </style>
+
+</head>
+<body>
+    <table>
+
+        <colgroup>
+            <col>
+            <col>
+            <col class="cor" span="3">
+        </colgroup>
+
+    <thead>
+                <tr>
+                    <th scope="col" >Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup" >Filmes</th>
+                </tr>
+    </thead>
+
+      <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup" >Mulheres</th>
+                <td>Maria de Ramos</th>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Barbosa</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo </td>
+                <td>Bee</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup" >Homens</th>
+                <td>Marcos Gabriel</td>
+                <td>Batman</td>
+                <td>Vingadores</td>
+                <td>Five Nights at Freddy's</td>
+            </tr>
+            <tr>
+                <td>Bruno Henrrique</td>
+                <td> Wall-e </td>
+                <td> Oldboy </td>
+                <td> Dangal </td>
+            </tr>
+            <tr>
+                <td>Jorge Mota </td>
+                <td>Star wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+      </tbody>
+
+    </table>
+</body>
+</html>
