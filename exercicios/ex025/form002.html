@@ -7,7 +7,20 @@
 </head>
 <body>
     
-    <form action="cadastro.php" method="post" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+      <p>
+        <label for="Inome">Nome</label>
+        <input type="text" name="Nome" id="Inome" autocomplete="name" required  minlength="10" maxlength="30" size="10" placeholder="Nome">
+      </p>  
+      <p>
+        <label for="Isenha">Senha</label>
+        <input type="password" name="senha" id="Isenha" autocomplete="current-password" required minlength="5" maxlength="30" size="5" placeholder="Senha">
+      </p>
+      <p>
+        <input type="reset" value="Apagar">
+        <input type="submit" value="Enviar">
+      </p>
 
     </form>
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="Iestado">Estados</label>
+            <select name="estado" id="Iestado">
+                <option selected>--Escolha--</option>
+                <optgroup label="Estados do Sul">
+                    <option>PR</option>
+                    <option>SC</option>
+                    <option>RS</option>
+                </optgroup>
+                <optgroup label="Estados do Sudeste">
+                    <option>ES</option>
+                    <option>MG</option>
+                    <option>RJ</option>
+                    <option>SP</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="Iprof">Profissão</label>
+            <input type="text" name="Profição" id="Iprof" list="Ipro" required>
+            <datalist id="Ipro">
+                <option>ADM</option>
+                <option>Adv.</option>
+                <option>Poli.</option>
+                <option>Programador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="IMSG">Diga seu opinião sobre sua Profissão</label>  <br>
+            <textarea name="MSG" id="IMSG" cols="30" rows="10" required></textarea>
+        </p>
+
+        <p>
+            <input type="reset" value="Apagar">
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+
+</body>
+</html>

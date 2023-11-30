@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*Estilo para impressora*/
+
+*{
+    padding: 5px;
+    margin: 5px;
+}
+
+body{
+    font-family: monospace;
+    font-size: 1em;
+}
+
+header{
+    text-align: center;
+}
+
+menu{
+    display: none;
+}
+
+article::after{
+    content: 'Cópia do Jornal Empério';
+}

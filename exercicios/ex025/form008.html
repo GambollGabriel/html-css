@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pt-br</title>
+</head>
+<body>
+    
+    <form action="cadastro.php" method="get">
+
+        <label for="in1">Qual o seu nivel de satisfação ?</label>
+        <input type="range" name="n1" id="in1" min="0" max="10" value="5" oninput="res.innerHTML = Number(in1.value)" >
+        <output id="res" >5</output>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <form action="cadastro.php" method="post">
+
+        <fieldset>
+
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="Imax"> <label for="Imax">Mascolino</label><br>
+            <input type="radio" name="sexo" id="Ifem">  <label for="Ifem">Feminino</label>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Qual dessas tegs faz quebra de linha?</legend>
+            <input type="checkbox" name="small" id="Ismall"> <label for="Ismall">Small</label><br>
+            <input type="checkbox" name="body" id="Ibody"> <label for="Ibody">Body</label><br>
+            <input type="checkbox" name="br" id="Ibr" checked > <label for="Ibr">Br</label>
+
+        </fieldset>
+
+        <p>
+            <input type="reset" value="Apagar">
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+
+</body>
+</html>

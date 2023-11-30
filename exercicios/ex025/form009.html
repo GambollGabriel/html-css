@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pt-br</title>
+</head>
+<body>
+    
+    <form action="" method="post">
+
+        <p>
+            <label for="in1">Coloque o ano que você naceu</label>
+            <input type="number" name="n1" id="in1" required min="1900" max="3000" oninput="Calculo()">
+        </p>
+
+        <p>
+            <label for="iidade">sua idade</label>
+            <output id="iidade">0</output>
+        </p>
+
+    </form>
+
+    <script>
+        function Calculo(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(in1.value)
+        }
+    </script>
+
+</body>
+</html>
