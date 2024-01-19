@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /* Aparelho em pé (portrait)*/
+
+body{
+    background-image: url(/exercicios/ex026/imagens/pe.png);
+    background-position: center bottom;
+}
+
